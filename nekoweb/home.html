@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chlomori</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="spiral_img"><img src ="spiral.PNG" alt="spiral" width="840"height="150"></div>
+
+            <div class ="navbarbox">
+                                    <nav class ="navbar">
+                                        <ul>
+                                            <li><a href ="">Home</a></li>
+                                            <li><a href="">Art</a></li>
+                                            <li><a href="">Blog</a></li>
+                                            <li><a href="">Extras</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+        
+        </header>
+
+            <main>
+                    
+                <div class = "container">
+
+                    <div class = "box" id="box1">
+                    <h1>Welcome /ᐠ - ˕ -マ⋆｡°✩</h1>
+                    <p>I'm a first year computer science student with a degree in illustration. I love art, computer, music and movies. This website was created just for fun, so this is where a lot of my silly ideas are stored! Hope you enjoy clicking through</p>
+                    
+                    <div id = "joke_container">
+                    <button onclick="showjoke()">click me</button>
+                    <p id ="jokedisplay"></p></div>
+                    
+                </div>
+
+                    <div class = "box" id ="box2">
+                    <iframe src="https://chloetmrw.atabook.org/" style="width:235px; height:350px; border-radius: 5%; margin: 5%;"></iframe></div>
+                    </div>
+
+
+                    <div class="box" id="box3"></div>
+                
+                </div>
+            
+                <script>
+                const jokes = [
+
+                    "A hacker went missing... I heard he ransomware.",
+                    "I asked my dog what's two minus two. He said nothing.",
+                    "Why do bees have sticky hair? Because they use honeycombs.",
+                    "I stayed up all night wondering where the sun went... Then it dawned on me.",
+                    "I gave all my dead batteries away today... Free of charge.",
+                    "Why don't programmers like nature? It has too many bugs.",
+                    "Why don't computers like spicy food? Too much byte.",
+                    "I started a band called 999 megabytes…We still havent gotten a gig.",
+                    "I am Buzz Aldrin. Second man to step on the moon. Neil before me.",
+                    "Did you hear the one about the dog and the tree? They had a long conversation about bark.",
+                    "How do you get a farm girl to marry you? First, a tractor",
+                    "Why do seagulls fly over the ocean? Because if they flew over the bay, theyd be bagels!",
+                    "How do you organize a space party? You planet!",
+                    " What do you call a pile of cats? A meowtain!",
+                    "Whats orange and sounds like a parrot? A carrot!",
+                    ];
+
+                function showjoke(){
+                    const randomIndex = Math.floor(Math.random()* jokes.length);
+                    const randomJoke = jokes[randomIndex];
+
+                    document.getElementById("jokedisplay").innerText = randomJoke;  
+                }
+                </script>
+            
+                </main> 
+
+    <aside>
+
+    </aside>
+
+</body>
+
+</html>

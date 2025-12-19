@@ -1,0 +1,127 @@
+body{
+    height: 110vh;
+    background-image: linear-gradient(to bottom, #3832EB,  rgb(255, 255, 255));
+}
+
+.spiral_img{
+    top:-25px;
+    position: absolute;
+    transform: translate(-50, -50);
+    left: 30%;
+    right: 40%;
+    z-index: 100;
+}
+
+.navbarbox{
+    top: 8%;
+    position: absolute;
+    width: 870px;
+    height: 75px;
+    transform: translate(-50,-50);
+    left: 30%;
+    right: 40%;
+    background-image: repeating-linear-gradient(white 20px, #6E9DF4 21px 22px, white 22px 42px, #6E9DF4 42px 43px,white 43px 63px,#6E9DF4 63px 64px, white 64px 84px, #6E9DF4 84px 85px, white 85px 100px );
+}
+
+.navbar ul{
+    top: 30%;
+    position: absolute;
+    list-style-type:none; 
+    overflow: hidden;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    z-index: 10;
+}
+
+.navbar a:hover{
+    background-color:yellow;
+    height: 50px;
+}
+
+.navbar li{
+    float: left;
+}
+
+.container{ 
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    right: 40%;
+    transform: translate(-50,-50); 
+    width: 870px;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 8px solid #3832EB;
+    background-image: repeating-linear-gradient(white 20px, #6E9DF4 21px 22px, white 22px 42px, #6E9DF4 42px 43px,white 43px 63px,#6E9DF4 63px 64px, white 64px 84px, #6E9DF4 84px 85px, white 85px 100px );
+}
+
+#joke_container{
+    margin: 3%;
+    top: 30%;
+    width: 100px;
+    position: absolute;
+}
+
+.box{
+    top: 15%;
+    margin: 1%;
+    border: 2.5px dashed #3832EB;
+    background-color: white;
+    border-radius: 5%;
+    height: 380px;
+}
+
+#box1{
+    color: white;
+    width: 550px;
+}
+
+#box2{
+    color: white;
+    width: 255px; 
+}
+
+#box3{
+    color:white;
+    width: 840px;
+    position: absolute;
+    top: 57%;
+    left: 30%;
+    right: 40%;
+    transform: translate(-50,-50); 
+}
+
+h1{
+    margin: 5%;
+    font-family: monospace;
+    font-size: 30px;
+    color: black;
+}
+
+p{
+    margin: 5%;
+    font-size: 19px;
+    color:black;
+    font-family: monospace;
+}
+
+#jokedisplay{
+    position: absolute;
+    background-image: repeating-linear-gradient(white 20px, #6E9DF4 21px 22px, white 22px 42px, #6E9DF4 42px 43px,white 43px 63px,#6E9DF4 63px 64px, white 64px 84px, #6E9DF4 84px 85px, white 85px 100px );
+    width: 270px;
+    height: 50px;
+    font-family: monospace;
+}
+
+#joke_container p{
+    font-family: monospace;
+    font-size: 20px;
+}
